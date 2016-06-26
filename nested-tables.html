@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Responsive Email Design</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<style type="text/css">
+
+  /* CLIENT-SPECIFIC STYLES ------------------- */
+  #outlook a {
+    padding: 0; /* Force Outlook to display a *view in browser* message. */
+  }
+
+  .ReadMsgBody {
+    width: 100%; /* Force Hotmail to display emails at full width */
+  }
+
+  .ExternalClass {
+    width: 100%; /* Force Hotmail to display emails at full width */
+  }
+
+  .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+    line-height: 100%; /* Force Hotmail to display normal line spacing */
+  }
+
+  body, table, td, a { /* Prevent WebKit and Windows mobile changing default text sizes */
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+  }
+
+  table, td { /* Remove spacing between tables in Outlook 2007 and up */
+    mso-table-lspace: 0pt;
+    mso-table-rspace: 0pt;
+  }
+
+  img { /* Allow smoother rendering of resized image in Internet Explorer */
+    -ms-interpolation-mode: bicubic;
+  }
+  /* RESET STYLES --------------------------- */
+  body {
+    height: 100% !important;
+    margin: 0;
+    padding: 0;
+    width: 100% !important;
+  }
+
+  img {
+    border: 0;
+    height: auto;
+    line-height: 100%;
+    outline: none;
+    text-decoration: none;
+  }
+
+  table {
+    border-collapse: collapse !important;
+  }
+
+  /* iOS BLUE LINKS */
+  .apple-links a {
+    color: #999999;
+    text-decoration: none;
+  }
+
+  /* MOBILE STYLES (MEDIA QUERIES)------------------------ */
+  @media screen and (max-width: 600px) {
+
+    td[class="logo"] img {
+      margin: 0 auto !important;
+    }
+
+    table[class="wrapper"] {
+      width: 100% !important;
+    }
+
+    td[class="mobile-image-pad"] {
+      padding: 0 10px 0 10px !important;
+    }
+
+    td[class="mobile-title-pad"] {
+      padding: 30px 10px 0px 10px !important;
+    }
+
+    td[class="mobile-text-pad"] {
+      padding: 10px 10px 10px 10px !important;
+    }
+
+    td[class="mobile-column-right"] {
+      padding-top: 20px !important;
+    }
+
+    img[class="fluid-image"] {
+      width: 100% !important;
+      height: auto !important;
+    }
+
+    td[class="hide"] {
+      display: none !important;
+    }
+
+    td[class="mobile-button"] {
+      padding: 12px 60px 12px 60px !important;
+    }
+
+    td[class="mobile-button"] a {
+      font-size: 24px !important;
+    }
+
+  }
+
+</style>
+</head>
+<body style="margin: 0; padding: 0;">
+
+<!-- CONTAINER TABLE -->
+<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed; font-family: 'Helvetica Neue'">
+  <tr>
+    <td align="center" style="padding: 10px 0 10px 0;">
+      <!-- WRAPPER TABLE -->
+      <table border="0" cellpadding="0" cellspacing="0" width="600" class="wrapper">
+        <!-- LOGO/PREHEADER TEXT -->
+        <tr>
+          <td>
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td align="left" class="logo">
+                  <img src="img/openmail-logo.png" width="100"  alt="OpenMail" style="display: block;"/>
+                </td>
+                <td align="right" class="hide" style="color: #999999; font-weight: normal; font-size: 16px; line-height: 20px;">
+                  <span style="font-style: italic;">better</span> email
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!-- CONTAINER TABLE -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed; font-family: Helvetica Neue, sans-serif;">
+  <tr>
+    <td align="center" bgcolor="#3c7fbf" style="padding: 10px 0 10px 0;">
+      <!-- WRAPPER TABLE -->
+      <table border="0" cellpadding="0" cellspacing="0" width="600" class="wrapper">
+        <tr>
+          <td>
+            <table border="0" cellpadding="0" cellspacing="0"  width="100%">
+              <tr>
+                <td style="padding: 20px 0 10px 0;" class="mobile-image-pad">
+                  <img src="img/auto-insurance.jpg" alt="Find the best Exercise Equipment on Sale Now" border="0" width="600" height="300" style="display: block; padding: 0; color: #ffffff; font-family: Helvitica Neue, sans-serif; font-weight: bold; font-size: 24px; background-color: #ffffff; -webkit-border-radius: 4px; border-radius: 4px;" class="fluid-image"/>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" style="padding: 10px 0 10px 0; color: #ffffff; font-size: 30px; font-weight: bold; line-height: 34px;">
+                  <b>Responsive Email Design</b>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" style="color: #ffffff; padding:10px; font-weight: normal; font-size: 16px; line-height: 20px;">
+                  Email is one of the most important tools for connecting with people on the web. But, most web designers ridicule HTML email as outdated, difficult, and not worth the trouble.
+                </td>
+              </tr>
+              <tr>
+                <td align="left" style="color: #ffffff; padding:10px; font-weight: normal; font-size: 16px; line-height: 22px;">
+                  Join email advocates <a href="#" style="color: #c1c1c1;">Justine Jordan</a> and <a href="#" style="color: #c1c1c1;">Jason Rodriguez</a> as they explain the importance of HTML email and prove that building beautiful, responsive email campaigns isn’t as scary as you thought.
+                </td>
+              </tr>
+              <tr>
+                <!-- BUTTON (BORDER-BASED APPROACH) -->
+                <td align="center" style="padding: 20px 0 20px 0;">
+                  <a href="#" target="_blank" style="font-size: 16px; font-family: Helvetica Neue, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; background-color: #f46e6c; border-top: 12px solid #f46e6c; border-bottom: 12px solid #f46e6c; border-right: 18px solid #f46e6c; border-left: 18px solid #f46e6c; display: inline-block;" class="mobile-button">Learn more &rarr;</a>
+                </td>
+                <!-- <td align="center" style="padding:10px 0 10px 0; font-weight: normal; font-size: 16px; line-height: 22px;">
+                  <a href="#">Learn more &rarr;</a>
+                </td> -->
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!-- CONTAINER TABLE -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed; font-family: 'Helvetica Neue';">
+  <tr>
+    <td align="center" style="padding: 20px 0 20px 0;">
+      <!-- WRAPPER TABLE -->
+      <table border="0" cellpadding="0" cellspacing="0" width="600" class="wrapper">
+        <tr>
+          <td>
+            <!-- TWO COLUMNS -->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td>
+                  <!-- LEFT COLUMN -->
+                  <table border="0" cellpadding="0" cellspacing="0" width="47%" align="left" class="wrapper">
+                    <tr>
+                      <td>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td class="mobile-image-pad">
+                              <img src="img/dentures.jpg" width="280" style="display: block; padding: 0; color: #ffffff; font-family: Helvitica Neue, sans-serif; font-weight: bold; font-size: 24px; background-color: #ffffff; -webkit-border-radius: 4px; border-radius: 4px;" class="fluid-image"/>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" style="padding: 10px 0 10px 0; font-weight: bold; font-size: 16px; line-height: 22px;">
+                              <b>Table-Based Design</b>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="color: #999999; font-weight: normal; font-size: 16px; line-height: 22px;" class="mobile-text-pad">
+                              Code like it's 1999! Learn to love table-based design, even if it takes a shower to feel clean again.
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- RIGHT COLUMN -->
+                  <table border="0" cellpadding="0" cellspacing="0" width="47%" align="right" class="wrapper">
+                    <tr>
+                      <td class="mobile-column-right">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td class="mobile-image-pad">
+                              <img src="img/exercise-woman.jpg" width="280" style="display: block; padding: 0; color: #ffffff; font-family: Helvitica Neue, sans-serif; font-weight: bold; font-size: 24px; background-color: #ffffff; -webkit-border-radius: 4px; border-radius: 4px;" class="fluid-image"/>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" style="padding: 10px 0 10px 0; font-weight: bold; font-size: 16px; line-height: 22px;">
+                              <b>Inline Styles FTW</b>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left" style="color: #999999; font-weight: normal; font-size: 16px; line-height: 22px;" class="mobile-text-pad">
+                              Who needs separation of structure and style? Let's slap some styles right on those table cells!
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!-- FOOTER -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed; font-family: 'Helvetica Neue'">
+  <tr>
+    <td align="center" bgcolor="#c1c1c1" style="padding: 20px 0 20px 0;">
+      <!-- WRAPPER TABLE -->
+      <table border="0" cellpadding="0" cellspacing="0" width="600" class="wrapper">
+        <tr>
+          <td align="center" class="apple-links" style="color: #ffffff; font-weight: normal; font-size: 16px; line-height: 22px;">
+            Sick of these emails? <a href="#">Unsubscribe</a> immediately.
+          </td>
+        </tr>
+        <tr>
+          <td align="center" style="color: #ffffff; padding: 10px 0 0 0; font-weight: normal; font-size: 16px; line-height: 22px;">
+            <span class="apple-links">Table Junkies
+            1234 Main St. Anywhere, MA 56789</span>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
